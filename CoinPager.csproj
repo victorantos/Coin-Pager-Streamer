@@ -192,6 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\app\app.js" />
+    <Content Include="Assets\app\controllers\txCtrl.js" />
     <Content Include="Assets\app\controllers\homeCtrl.js" />
     <Content Include="Assets\app\controllers\registerCtrl.js" />
     <Content Include="Assets\app\controllers\signInCtrl.js" />
@@ -213,6 +214,10 @@
     <Content Include="Assets\styles\styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -246,6 +251,10 @@
     <Content Include="Views\App\Register.cshtml" />
     <Content Include="Views\App\SignIn.cshtml" />
     <Content Include="Views\App\TodoManager.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <Content Include="Views\App\Tx.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -4,7 +4,7 @@
     'home',
     'signIn',
     'register',
-    'todoManager'
+    'tx'
 ]);
 
 
@@ -51,9 +51,9 @@ app.config(['$provide', '$routeProvider', '$httpProvider', function ($provide, $
         templateUrl: 'App/SignIn',
         controller: 'signInCtrl'
     });
-    $routeProvider.when('/todomanager', {
-        templateUrl: 'App/TodoManager',
-        controller: 'todoManagerCtrl'
+    $routeProvider.when('/tx/:id?', {
+        templateUrl: 'App/Tx',
+        controller: 'txCtrl'
     });
     
     $routeProvider.otherwise({

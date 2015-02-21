@@ -1,7 +1,7 @@
 ﻿<div class="container">
     <h2>Real time messages on the blockchain</h2>
     <p>Sample data:</p>
-    <table class="table table-striped">
+    <table class="table table-striped" style="cursor:pointer;">
         <thead>
             <tr>
                 <th>From</th>
@@ -10,20 +10,10 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>1TXTfdsfsdfs</td>
-            </tr>
-            <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>1KILLfdsfsdfs</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>1BILLfdsfsdfs</td>
+            <tr ng-repeat="item in items" ng-click="goToDetails(item.from)">
+                <td>{{item.from}}</td>
+                <td>{{item.to}}</td>
+                <td>{{item.message}}</td>
             </tr>
         </tbody>
     </table>

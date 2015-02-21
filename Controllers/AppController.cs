@@ -23,9 +23,8 @@ namespace CoinPager.Controllers
         {
             return PartialView();
         }
-
-        [Authorize]
-        public ActionResult TodoManager()
+       
+        public ActionResult Tx()
         {
             return PartialView();
         }
