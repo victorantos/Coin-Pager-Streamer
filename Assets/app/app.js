@@ -1,10 +1,12 @@
 ﻿var app = angular.module('app', [
     'ngRoute',
     'ngCookies',
+ 
     'home',
     'signIn',
     'register',
-    'tx'
+    'tx',
+    'coinpager.service'
 ]);
 
 

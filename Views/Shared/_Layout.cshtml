@@ -6,14 +6,26 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Assets/Bootstrap/css/bootstrap.css")
     @Styles.Render("~/styles")
+    <link href="~/SignalR.Sample/StockTicker.css" rel="stylesheet" />
+
 </head>
 <body>
     @RenderBody()
 
+
+    <script src="~/SignalR.Sample/jquery-1.10.2.min.js"></script>
+    <script src="~/SignalR.Sample/jquery.color-2.1.2.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.0.js"></script>
+    <script src="~/signalr/hubs"></script>
+
+    @*<script src="~/SignalR.Sample/SignalR.StockTicker.js"></script>*@
     @Scripts.Render("~/ng")
     @Scripts.Render("~/app")
-    @Scripts.Render("~/jquery")
+    @*@Scripts.Render("~/jquery")*@
+  
     @Scripts.Render("~/bootstrap")
     @Scripts.Render("~/misc")
+
+   
 </body>
 </html>
